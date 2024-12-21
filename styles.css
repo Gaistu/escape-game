@@ -1,0 +1,131 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en page générale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #004d40;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Question */
+#question-box {
+    text-align: center;
+}
+
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Champ de saisie */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease-in-out;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #00796b;
+}
+
+/* Boutons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+button:disabled {
+    background-color: #bdbdbd;
+}
+
+button:hover:enabled {
+    background-color: #004d40;
+}
+
+/* Affichage des résultats */
+#answer-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#answer-display {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Message de fin */
+#end-message {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Masquer les éléments invisibles */
+.hidden {
+    display: none;
+}
+
+/* Responsive : ajustements pour les appareils plus petits */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+}
